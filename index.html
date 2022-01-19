@@ -6,8 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JSON Formatter</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
   </head>
   <body>
-    <script src="main.js"></script>
+    <div class="container">
+      <textarea
+        class="large-area large-area--input"
+        placeholder="Enter your JSON here..."
+      >
+{"name": "Max"}</textarea
+      >
+      <div class="controls">
+        <button type="button" class="controls__button controls__button--format">
+          Format
+        </button>
+        <button type="button" class="controls__button controls__button--minify">
+          Minify
+        </button>
+      </div>
+      <textarea
+        class="large-area large-area--output"
+        placeholder="Your JSON will appear here..."
+        readonly
+      ></textarea>
+    </div>
   </body>
 </html>
